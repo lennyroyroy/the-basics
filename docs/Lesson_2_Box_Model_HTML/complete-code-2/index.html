@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>**Completed Code Version** · The Basics</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;hr&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="**Completed Code Version** · The Basics"/><meta property="og:type" content="website"/><meta property="og:url" content="https://lennyroyroy.github.io/the-basics/"/><meta property="og:description" content="&lt;hr&gt;
+"/><meta property="og:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/the-basics/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/the-basics/css/main.css"/><script src="/the-basics/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/the-basics/"><img class="logo" src="/the-basics/img/favicon.ico" alt="The Basics"/><h2 class="headerTitleWithLogo">The Basics</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/the-basics/docs/intro/intro" target="_self">Intro</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>The Box Model</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Basics<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/intro/intro">Intro to the Course</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started HTML<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/lesson-1">🎯 Lesson 1 Tutorial 🎯</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/tag-1">Cheat Sheet (HTML Basics)</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/resources-1">Links &amp; Tutorials</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/complete-code-1">**Completed Code Version**</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Box Model<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/lesson-2">🍱 Lesson 2 Tutorial 🍱</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/tag-2">Cheat Sheet (IDs &amp; Classes)</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/resources-2">Links &amp; Tutorials</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/complete-code-2">**Completed Code Version**</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">**Completed Code Version**</h1></header><article><div><span><hr>
+<!-- View Source Button -->
+<a href="https://glitch.com/edit/#!/the-basics-2" target="_blank">
+  <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fview-source%402x.png?1513093958802" alt="view source" height="33">
+</a>
+<hr>
+<h1><a class="anchor" aria-hidden="true" id="indexhtml"></a><a href="#indexhtml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>index.html</h1>
+<pre><code class="hljs css language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"style.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css?family=Roboto"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>A div tag with text<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>A p tag, as the direct child of a div<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p tag with an image underneath, within the same div<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/05/22224952/beagle-puppy-in-large-cushion-chair.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"200px"</span>/&gt;</span>   
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example1"</span>&gt;</span>This is a p tag with a class name<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example2"</span>&gt;</span>First p tag with the same class name.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example2"</span>&gt;</span>Second p tag with the same class name.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example2"</span>&gt;</span>Third p tag with the same class name.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"parent"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"child"</span>&gt;</span>
+        The Box Model
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"color-quiz"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"one"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"one"</span>&gt;</span>What color is this?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"two"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"two"</span>&gt;</span>What color is this?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"three"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"three"</span>&gt;</span>What color is this?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"four"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"four"</span>&gt;</span>What color is this?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="stylecss"></a><a href="#stylecss" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>style.css</h1>
+<pre><code class="hljs css language-css"><span class="hljs-comment">/* Standard Styles */</span>
+<span class="hljs-selector-tag">body</span>{
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Roboto'</span>, sans-serif;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.35em</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+}
+<span class="hljs-comment">/* Ignore */</span>
+
+
+
+<span class="hljs-selector-tag">body</span>{
+    <span class="hljs-attribute">margin</span>:<span class="hljs-number">0px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f5f6fa</span>;
+}
+
+<span class="hljs-selector-class">.example1</span>{
+    <span class="hljs-attribute">color</span>:<span class="hljs-number">#ff5252</span>;
+}
+
+<span class="hljs-selector-class">.example2</span>{
+    <span class="hljs-attribute">color</span>:<span class="hljs-number">#34ace0</span>;
+    <span class="hljs-attribute">display</span>: inline;
+}
+
+<span class="hljs-selector-class">.parent</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#ff5252</span> <span class="hljs-number">2px</span>;
+    <span class="hljs-attribute">margin-top</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">padding-top</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">padding-right</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">padding-bottom</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">padding-left</span>:<span class="hljs-number">100px</span>;
+}
+
+<span class="hljs-selector-class">.child</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#34495e</span> <span class="hljs-number">2px</span>;
+    <span class="hljs-attribute">margin-top</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">margin-right</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">margin-bottom</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">padding-top</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">padding-right</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">padding-bottom</span>:<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">padding-left</span>:<span class="hljs-number">50px</span>;
+}
+
+<span class="hljs-selector-class">.color-quiz</span>{
+    <span class="hljs-attribute">color</span>: black;
+}
+
+<span class="hljs-comment">/* Classes */</span>
+
+<span class="hljs-selector-class">.one</span>{
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff5252</span>;
+}
+<span class="hljs-selector-class">.two</span>{
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#34495e</span>;
+    <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
+}
+
+<span class="hljs-selector-class">.three</span>{
+    <span class="hljs-attribute">color</span>: black;
+}
+
+<span class="hljs-selector-class">.four</span>{
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff793f</span>;
+}
+
+
+<span class="hljs-selector-class">.one</span>{
+    <span class="hljs-attribute">color</span>: orange;
+}
+<span class="hljs-selector-class">.two</span>{
+    <span class="hljs-attribute">color</span>: blue;
+    <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
+}
+
+<span class="hljs-selector-class">.three</span>{
+    <span class="hljs-attribute">color</span>: yellow
+}
+
+<span class="hljs-selector-class">.four</span>{
+    <span class="hljs-attribute">color</span>: green;
+}
+
+<span class="hljs-comment">/* IDs */</span>
+
+
+<span class="hljs-selector-id">#one</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#e84118</span> <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">color</span>:lime;
+}
+<span class="hljs-selector-id">#two</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#192a56</span> <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">color</span>: lime;
+}
+<span class="hljs-selector-id">#three</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#2f3640</span> <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">color</span>: lime;
+}
+<span class="hljs-selector-id">#four</span>{
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">#fbc531</span> <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">color</span>: lime;
+}
+
+<span class="hljs-selector-class">.color-quiz</span> <span class="hljs-selector-tag">p</span>{
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#e84118</span> <span class="hljs-meta">!important</span>;
+}
+
+
+
+
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/the-basics/docs/Lesson_2_Box_Model_HTML/resources-2"><span class="arrow-prev">← </span><span>Links &amp; Tutorials</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/the-basics/" class="nav-home"><img src="/the-basics/img/favicon.ico" alt="The Basics" width="66" height="58"/></a><div><h5>Docs</h5><a href="/the-basics/docs/en/intro/intro.html">Getting Started (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">Guides (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/the-basics/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/the-basics/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/the-basics/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

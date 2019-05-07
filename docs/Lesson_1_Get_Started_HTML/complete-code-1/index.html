@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>**Completed Code Version** · The Basics</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;hr&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="**Completed Code Version** · The Basics"/><meta property="og:type" content="website"/><meta property="og:url" content="https://lennyroyroy.github.io/the-basics/"/><meta property="og:description" content="&lt;hr&gt;
+"/><meta property="og:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/the-basics/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/the-basics/css/main.css"/><script src="/the-basics/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/the-basics/"><img class="logo" src="/the-basics/img/favicon.ico" alt="The Basics"/><h2 class="headerTitleWithLogo">The Basics</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/the-basics/docs/intro/intro" target="_self">Intro</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started HTML</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Basics<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/intro/intro">Intro to the Course</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started HTML<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/lesson-1">🎯 Lesson 1 Tutorial 🎯</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/tag-1">Cheat Sheet (HTML Basics)</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/resources-1">Links &amp; Tutorials</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/the-basics/docs/Lesson_1_Get_Started_HTML/complete-code-1">**Completed Code Version**</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Box Model<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/lesson-2">🍱 Lesson 2 Tutorial 🍱</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/tag-2">Cheat Sheet (IDs &amp; Classes)</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/resources-2">Links &amp; Tutorials</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Lesson_2_Box_Model_HTML/complete-code-2">**Completed Code Version**</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">**Completed Code Version**</h1></header><article><div><span><hr>
+<p><a href="https://glitch.com/edit/#!/basics-1" target="_blank">
+<img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fview-source%402x.png?1513093958802" alt="view source on Glitch" height="33">
+</a></p>
+<hr>
+<pre><code class="hljs css language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My First Lesson in Web Development<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"style.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My First Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare orci eu mollis rutrum. Etiam varius felis neque, sit amet tempor purus auctor vitae. Ut quis odio diam. Nam eu orci erat. Phasellus massa risus, lobortis vel velit vitae, ultricies suscipit ex. Fusce feugiat magna semper mauris iaculis ornare. Duis id ultrices neque. Maecenas finibus urna vitae mi pretium, non vestibulum purus laoreet. In felis eros, gravida in nibh vitae, mollis accumsan turpis. Praesent at accumsan erat. Nulla non massa in nulla bibendum bibendum. Proin sit amet turpis eu est sodales pellentesque. <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>Aliquam ultricies justo eu ipsum interdum pellentesque.<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare orci eu mollis rutrum. <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Etiam varius felis neque, sit amet tempor purus auctor vitae. Ut quis odio diam.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Nam eu orci erat. Phasellus massa risus, lobortis vel velit vitae, ultricies suscipit ex. Fusce feugiat magna semper mauris iaculis ornare. Duis id ultrices neque. Maecenas finibus urna vitae mi pretium, non vestibulum purus laoreet. In felis eros, gravida in nibh vitae, mollis accumsan turpis. Praesent at accumsan erat. Nulla non massa in nulla bibendum bibendum. Proin sit amet turpis eu est sodales pellentesque. Aliquam ultricies justo eu ipsum interdum pellentesque. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>An H2 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>An H3 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>An H4 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>An H5 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>An H6 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Duis id ultrices neque. Maecenas finibus urna vitae mi pretium, non vestibulum purus laoreet. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>In felis eros, gravida in nibh vitae<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, mollis accumsan turpis. Praesent at accumsan erat. Nulla non massa in nulla bibendum bibendum. Proin sit amet turpis eu est sodales pellentesque. Aliquam ultricies justo eu ipsum interdum pellentesque.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>An Unordered list<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>An Ordered list<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List Item #3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"text-align:center"</span>&gt;</span>Advanced<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://static.scientificamerican.com/sciam/cache/file/D059BC4A-CCF3-4495-849ABBAFAED10456_source.jpg?w=590&amp;h=800&amp;526ED1E1-34FF-4472-B348B8B4769AB2A1"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"100px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"100px"</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>The <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span> h1<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> tag has a default margin applied. Margin is the space around the element. Go into the developer tools and remove it.
+    
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/the-basics/docs/Lesson_1_Get_Started_HTML/resources-1"><span class="arrow-prev">← </span><span>Links &amp; Tutorials</span></a><a class="docs-next button" href="/the-basics/docs/Lesson_2_Box_Model_HTML/lesson-2"><span>🍱 Lesson 2 Tutorial 🍱</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/the-basics/" class="nav-home"><img src="/the-basics/img/favicon.ico" alt="The Basics" width="66" height="58"/></a><div><h5>Docs</h5><a href="/the-basics/docs/en/intro/intro.html">Getting Started (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">Guides (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/the-basics/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/the-basics/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/the-basics/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
