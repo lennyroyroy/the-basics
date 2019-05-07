@@ -249,6 +249,7 @@ body{
 
  _What Changed?_
 
+---
 
 ### Order of CSS rules affect **hierarchy**
 In the `/* Classes */` section, and above the `/* IDs */` section, add the following

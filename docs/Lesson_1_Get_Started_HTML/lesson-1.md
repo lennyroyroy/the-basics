@@ -18,7 +18,7 @@ title: 🎯 Lesson 1 Tutorial 🎯
 ---
 
 ### Create a **Heading**
-Create an `<h1>` heading
+Create an `<h1>` headings
 
 ```hmtl
 <h1>My First Heading</h1>
