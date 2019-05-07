@@ -1,0 +1,21 @@
+/* Standard Styles*/
+
+/*Update Colors  CSS Variables update font*/
+
+
+:root {
+ --fui-red: #ff5252;
+ --fui-yellow: #ffda79;
+ --fui-orange: #ff793f;
+ --fui-purple: #474787;
+ --fui-blue: #34ace0;
+ --fui-green: #33d9b2;
+ --fui-grey: #84817a;
+ --fui-darkblue: #34495e;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.35em;
+	line-height: 1.5;
+}
