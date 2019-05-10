@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>First Steps With HTML · The Basics</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;hr&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="First Steps With HTML · The Basics"/><meta property="og:type" content="website"/><meta property="og:url" content="https://lennyroyroy.github.io/the-basics/"/><meta property="og:description" content="&lt;hr&gt;
+"/><meta property="og:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://lennyroyroy.github.io/the-basics/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/the-basics/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/the-basics/css/main.css"/><script src="/the-basics/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/the-basics/"><img class="logo" src="/the-basics/img/favicon.ico" alt="The Basics"/><h2 class="headerTitleWithLogo">The Basics</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Basic HTML</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Basics<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/intro/intro">Intro to the Course</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Basic HTML<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/the-basics/docs/Section_1_Basic_HTML/lesson-1-first-steps">First Steps With HTML</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_1_Basic_HTML/lesson-2-parent-child">Parent/Child Structure in HTML</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_1_Basic_HTML/resources/1.1-cheat-sheet">Cheat Sheet #1</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_1_Basic_HTML/resources/1.2-helpful-links">Helpful Links</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">The Box Model<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_2_Box_Model_HTML/lesson-2">🍱 Lesson 2 Tutorial 🍱</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpful Resources</h4><ul><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_2_Box_Model_HTML/tag-2">Cheat Sheet (IDs &amp; Classes)</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_2_Box_Model_HTML/resources-2">Links &amp; Tutorials</a></li><li class="navListItem"><a class="navItem" href="/the-basics/docs/Section_2_Box_Model_HTML/complete-code-2">**Completed Code Version**</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">First Steps With HTML</h1></header><article><div><span><hr>
+<h3><a class="anchor" aria-hidden="true" id="write-code-on-glitch"></a><a href="#write-code-on-glitch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Write code on Glitch!</h3>
+<!-- Remix Button -->
+<a href="https://glitch.com/edit/#!/remix/basic-template-1" target="_blank">
+  <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix this" height="33">
+</a>
+<br>
+<br>
+<p><em>This button will open a glitch file which you can edit.</em></p>
+<p><strong>Make sure you sign into Glitch! First things first!</strong></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="intro-to-html-elements"></a><a href="#intro-to-html-elements" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Intro to HTML Elements</h2>
+<h3><a class="anchor" aria-hidden="true" id="remix-project"></a><a href="#remix-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remix project</h3>
+<ul>
+<li>Click on the button above to create a new glitch file which you can edit.</li>
+<li>Make sure you rename your project right away!</li>
+<li><code>yourname-basics-1</code> for example.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="create-text-on-a-live-page"></a><a href="#create-text-on-a-live-page" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create text on a live page</h3>
+<ul>
+<li>Write one paragraph in <code>index.html</code> about your favorite meal!</li>
+<li>If you can't think of anything, feel free to grab dummy text from this link:
+<ul>
+<li><a href="https://www.lipsum.com/feed/html" target="_blank"> Click here to get Lorem Ipsum Text</a></li>
+</ul></li>
+<li>Once you have written the paragraph, see your work live.</li>
+</ul>
+<p><br></p>
+<p><audio controls>
+<source src="https://ia802807.us.archive.org/29/items/acidplanet-audio-01317796/01317796.mp3" type="audio/mp3">
+Your browser does not support the audio tag.
+</audio></p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="marking-up-our-text"></a><a href="#marking-up-our-text" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Marking up our text</h3>
+<p><img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/element-1.png" width="100%;" height="400px;">\</p>
+<ul>
+<li>Elements in HTML have a consistent syntax</li>
+<li>Pay close attention to the image above for tips on how to correctly create and HTML element</li>
+<li>Notice for example that and element has carrots on each end</li>
+<li>The <code>opening</code> tag has a <code>&lt;</code> and <code>&gt;</code></li>
+<li>While the <code>closing</code> tag has a <code>&lt;/</code> and <code>&gt;</code></li>
+<li>Below you can see how we create out first real element, the <code>&lt;strong&gt;</code> tag</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/strong-2.png" width="100%;" height="400px;">\</p>
+<p><audio controls>
+<source src="https://ia802807.us.archive.org/29/items/acidplanet-audio-01317796/01317796.mp3" type="audio/mp3">
+Your browser does not support the audio tag.
+</audio></p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="test-out-your-skills"></a><a href="#test-out-your-skills" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test out your skills</h3>
+<p>If you haven't done so yet, go ahead and click the glitch button at the top of the page to start a new glitch file.</p>
+<p><strong>Challenge:</strong></p>
+<pre><code class="hljs css language-html">Type out all the commands in the cheat sheet onto your glitch file.
+</code></pre>
+<p><a href="/the-basics/docs/Section_1_Basic_HTML/resources/1.1-cheat-sheet">Cheat Sheet</a></p>
+<p><em>Make sure to TYPE these commands out BY HAND, it's the best way to learn</em></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/the-basics/docs/intro/intro"><span class="arrow-prev">← </span><span>Intro to the Course</span></a><a class="docs-next button" href="/the-basics/docs/Section_1_Basic_HTML/lesson-2-parent-child"><span>Parent/Child Structure in HTML</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#intro-to-html-elements">Intro to HTML Elements</a><ul class="toc-headings"><li><a href="#remix-project">Remix project</a></li><li><a href="#create-text-on-a-live-page">Create text on a live page</a></li><li><a href="#marking-up-our-text">Marking up our text</a></li><li><a href="#test-out-your-skills">Test out your skills</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/the-basics/" class="nav-home"><img src="/the-basics/img/favicon.ico" alt="The Basics" width="66" height="58"/></a><div><h5>Docs</h5><a href="/the-basics/docs/en/intro/intro.html">Getting Started (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">Guides (or other categories)</a><a href="/the-basics/docs/en/intro/intro.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/the-basics/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/the-basics/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/the-basics/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
