@@ -4,4 +4,13 @@ title: Helpful Links
 sidebar_label: Links & Tutorials
 ---
 
-## Resources
+---
+
+## Dummy Text For Projects  
+<a href="https://www.lipsum.com/feed/html" target="_blank">Click here for Lorem Text</a>
+
+---
+
+
+
+
