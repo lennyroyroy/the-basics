@@ -1,6 +1,6 @@
 ---
 id: lesson-1
-title: 🎯 Lesson 1 Tutorial 🎯
+title: Lesson 1 Tutorial
 ---
 
 ##  *Getting Started With HTML*

@@ -3,28 +3,27 @@
     "The Basics": [
 		"intro/intro"
     ],
-    "Getting Started HTML": [
-    	"Lesson_1_Get_Started_HTML/lesson-1",
+    "Basic HTML": [
+        "Section_1_Basic_HTML/lesson-1-first-steps",
+    	"Section_1_Basic_HTML/lesson-2-parent-child",
     	{
     	"type": "subcategory",
         "label": "Helpful Resources",
         	"ids": [
-        		"Lesson_1_Get_Started_HTML/tag-1",
-                "Lesson_1_Get_Started_HTML/new-test",
-        		"Lesson_1_Get_Started_HTML/resources-1",
-                "Lesson_1_Get_Started_HTML/complete-code-1"
+        		"Section_1_Basic_HTML/resources/1.1-cheat-sheet",
+                "Section_1_Basic_HTML/resources/1.2-helpful-links"
         	]
     }
     ],
         "The Box Model": [
-        "Lesson_2_Box_Model_HTML/lesson-2",
+        "Section_2_Box_Model_HTML/lesson-2",
         {
         "type": "subcategory",
         "label": "Helpful Resources", 
             "ids": [
-                "Lesson_2_Box_Model_HTML/tag-2",
-                "Lesson_2_Box_Model_HTML/resources-2",
-                "Lesson_2_Box_Model_HTML/complete-code-2"
+                "Section_2_Box_Model_HTML/tag-2",
+                "Section_2_Box_Model_HTML/resources-2",
+                "Section_2_Box_Model_HTML/complete-code-2"
             ]
         }
     ]

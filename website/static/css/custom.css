@@ -8,7 +8,40 @@ body{
 	margin-top:80px;
 }
 
+audio{
+	width: 100%;
+}
+
+
+/*Horizontal Line First On Page*/
+
+hr:first-of-type{
+	border:solid 5px;
+	border-color: #5C194D;
+	border-radius: 10px;
+	margin:0px;
+}
+
+hr:nth-of-type(2){
+	border:solid 5px;
+	border-color: #5C194D;
+	border-radius: 10px;
+	margin:0px;
+	margin-top: 30px !important;
+}
+
+/*Horizontal Line First On Page*/
+
+
+a:hover{
+	text-decoration: underline;
+	color: #c0392b;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+	hr:first-of-type{
+	margin:0px;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
