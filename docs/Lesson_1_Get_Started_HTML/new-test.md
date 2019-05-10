@@ -21,21 +21,37 @@ _This button will open a glitch file which you can edit._
 ---
 
 
-### Remix Project 
+### Remix project 
 * Click on the button above to create a new glitch file which you can edit.
 * Make sure you rename your project right away!
 * `yourname-basics-1` for example.
+
+---
+
+### Create text on a live page
 * Write one paragraph in `index.html` about your favorite meal!
 * If you can't think of anything, feel free to grab dummy text from this link:
 	* <a href="https://www.lipsum.com/feed/html" target="_blank"> Click here to get Lorem Ipsum Text</a>
 * Once you have written the paragraph, see your work live.
 
-<!-- ![The Sound File](the-sound-file.mp3?controlsList=nodownload-nofullscreen-noremoteplayback) -->
+
+<br>
 
 <audio controls>
-  <source src="../../static/the-sound-file.mp3" type="audio/mp3">
+  <source src="https://ia802807.us.archive.org/29/items/acidplanet-audio-01317796/01317796.mp3" type="audio/mp3">
   Your browser does not support the audio tag.
 </audio> 
 
 ---
+
+
+### Marking up our text
+
+<img src="/Users/lennyroy/the-basics/docs/static/img/element-tag.png">
+
+<img src="https://d19ta9rijs3cxg.cloudfront.net/wp-content/uploads/2016/03/4.png">
+
+
+
+
 
