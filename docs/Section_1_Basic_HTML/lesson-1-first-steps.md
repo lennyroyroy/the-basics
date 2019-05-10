@@ -50,8 +50,8 @@ _This button will open a glitch file which you can edit._
 
 ### Marking up our text
 
-<img src="" width="100%;" height="400px;">\
-**element syntax**
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/element-1.png" width="100%;" height="400px;">\
+
 
 * Elements in HTML have a consistent syntax
 * Pay close attention to the image above for tips on how to correctly create and HTML element
@@ -60,8 +60,8 @@ _This button will open a glitch file which you can edit._
 * While the `closing` tag has a `</` and `>`
 * Below you can see how we create out first real element, the `<strong>` tag
 
-<img src="" width="100%;" height="400px;">\
-**strong tag**
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/strong-2.png" width="100%;" height="400px;">\
+
 
 <audio controls>
   <source src="https://ia802807.us.archive.org/29/items/acidplanet-audio-01317796/01317796.mp3" type="audio/mp3">
