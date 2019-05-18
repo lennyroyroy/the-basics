@@ -17,8 +17,8 @@ We will be using a collaborative coding platform called Glitch in this course. G
 * Large repository of in site tutorials and projects for inspiration.
 * Git hub import/export included as well as version control.
 
-<img src="" width="100%" height="400px" alt=""/>
-**Glitch Home Screen**^
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch0.png">
+
 
 ## Setting up our Glitch Account 
 
@@ -26,7 +26,7 @@ Navigate to <a href="https://glitch.com/" target="_blank">glitch.com</a>
 
 
 
-<iframe width="560" height="315" style="margin:0px;" src="https://www.youtube.com/embed/y162SSimvMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="860" height="580" style="margin:0px;" src="https://www.youtube.com/embed/y162SSimvMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <!-- Cards -->
