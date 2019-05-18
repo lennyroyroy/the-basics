@@ -26,4 +26,36 @@ Navigate to <a href="https://glitch.com/" target="_blank">glitch.com</a>
 
 
 
+<iframe width="560" height="315" style="margin:0px;" src="https://www.youtube.com/embed/y162SSimvMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<!-- Cards -->
+
+<h2>Click Here For Glitch Setup Help!</h2>
+
+
+<label for="show" class="show-button button"><span>Show</span></label>
+<input type=radio id="show" name="group">
+<label for="hide" class="hide-button button"><span>Hide</span></label>    
+<input type=radio id="hide" name="group">
+<span id="content">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch1.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch2.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch3.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch4.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch5.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch6.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch7.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch8.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch9.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch10.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch11.png">
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch12.png">
+</span>
+
+
+<!--  -->
+
+
+
 
