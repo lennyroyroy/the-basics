@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../../static/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+<section>
+	
+	<p>This is a child element</p>
+
+</section>
+
+
+
+
+
+
+<section class="parent">
+parent
+	<section class="child-1">child-1
+		<p class="grandchild-1">Text</p>
+	</section>	
+
+	<section class="child-2">child-2
+		<section class="granchild-2">granchild-2
+			<section class="great-granchild-2">great-granchild-2
+				<p class="great-great-granchild-2">great-great-granchild-2</p>
+			</section>
+		</section>
+	</section>	
+
+</section>
+
+</body>
+</html>
+
+
+
+<style type="text/css">
+	.parent{
+		border:solid var(--fui-red) 1px;
+		padding:20px;
+	}
+
+	.child-1{
+		border:solid var(--fui-blue) 3px;
+		margin-bottom: 20px;
+		padding:20px;
+	}
+
+	.child-2{
+		border:solid var(--fui-green) 3px;
+		margin-bottom: 20px;
+		padding:20px;
+	}
+
+	.granchild-2{
+		padding:10px;
+		border:solid var(--fui-purple) 1px;
+	}
+	.great-granchild-2{
+		border:solid var(--fui-grey) 1px;
+		padding:10px;
+	}
+	.great-great-granchild-2{
+		border:solid var(--fui-darkblue) 1px;
+		padding:10px;
+	}
+
+</style>
+
+

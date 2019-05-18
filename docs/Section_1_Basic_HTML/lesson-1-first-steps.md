@@ -1,6 +1,6 @@
 ---
 id: lesson-1-first-steps
-title: First Steps With HTML
+title: Lesson 1 - First Steps
 ---
 
 ---
@@ -34,8 +34,8 @@ _This button will open a glitch file which you can edit._
 ### Create text on a live page
 * Write one paragraph in `index.html` about your favorite meal!
 * If you can't think of anything, feel free to grab dummy text from this link:
-	* <a href="https://www.lipsum.com/feed/html" target="_blank"> Click here to get Lorem Ipsum Text</a>
-* Once you have written the paragraph, see your work live.
+	* <a href="https://www.lipsum.com/feed/html" target="_blank"> Get Lorem Ipsum Text</a>
+* Once you have written the paragraph, click the glitch `show live` button to see your work.
 
 
 <br>
@@ -50,7 +50,7 @@ _This button will open a glitch file which you can edit._
 
 ### Marking up our text
 
-<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/element-1.png" width="100%;" height="400px;">\
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/element-1.png">
 
 
 * Elements in HTML have a consistent syntax
@@ -60,7 +60,7 @@ _This button will open a glitch file which you can edit._
 * While the `closing` tag has a `</` and `>`
 * Below you can see how we create out first real element, the `<strong>` tag
 
-<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/strong-2.png" width="100%;" height="400px;">\
+<img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/strong-2.png">
 
 
 <audio controls>
