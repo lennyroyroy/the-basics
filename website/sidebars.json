@@ -1,18 +1,18 @@
 {
   "docs": {
     "The Basics": [
-		"intro/intro"
+        "intro/intro"
     ],
     "Basic HTML": [
         "Section_1_Basic_HTML/lesson-1-first-steps",
-    	"Section_1_Basic_HTML/lesson-2-parent-child",
-    	{
-    	"type": "subcategory",
+        "Section_1_Basic_HTML/lesson-2-parent-child",
+        {
+        "type": "subcategory",
         "label": "Helpful Resources",
-        	"ids": [
-        		"Section_1_Basic_HTML/resources/1.1-cheat-sheet",
+            "ids": [
+                "Section_1_Basic_HTML/resources/1.1-cheat-sheet",
                 "Section_1_Basic_HTML/resources/1.2-helpful-links"
-        	]
+            ]
     }
     ],
         "The Box Model": [
