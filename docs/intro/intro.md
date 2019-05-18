@@ -32,7 +32,7 @@ Navigate to <a href="https://glitch.com/" target="_blank">glitch.com</a>
 <!-- Cards -->
 
 <h2>Click Here For Glitch Setup Help!</h2>
-
+<!-- 
 
 <label for="show" class="show-button button"><span>Show</span></label>
 <input type=radio id="show" name="group">
@@ -52,7 +52,7 @@ Navigate to <a href="https://glitch.com/" target="_blank">glitch.com</a>
 <img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch11.png">
 <img src="https://raw.githubusercontent.com/lennyroyroy/the-basics/master/docs/static/img/glitch12.png">
 </span>
-
+ -->
 
 <!--  -->
 
