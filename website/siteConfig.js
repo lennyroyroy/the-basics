@@ -52,7 +52,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/LC-white-full.png',
   footerIcon: 'img/LR-white@2x.png',
-  favicon: 'img/LC-white-full.png',
+  favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
