@@ -4,6 +4,11 @@ body{
 	background-color: #f5f6fa;
 }
 
+.fixedHeaderContainer header img{
+  height: 60px;
+  width: auto;
+}
+
 .room{
 	margin-top:80px;
 }

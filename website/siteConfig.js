@@ -50,9 +50,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/LC-white-full.png',
+  footerIcon: 'img/LR-white@2x.png',
+  favicon: 'img/LC-white-full.png',
 
   /* Colors for website */
   colors: {
@@ -75,7 +75,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Lennyroy Codes`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
