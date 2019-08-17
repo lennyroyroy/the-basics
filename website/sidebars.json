@@ -1,34 +1,45 @@
 {
   "docs": {
     "The Basics": [
-        "intro/intro"
+        "Introduction/Introduction"
     ],
-    "Basic HTML": [
-        "Section_1_Basic_HTML/lesson-1-first-steps",
-        "Section_1_Basic_HTML/lesson-2-parent-child",
+    "Intro to HTML": [
+        "HTML/1-getting-started",
+        "HTML/2-foundations",
         {
         "type": "subcategory",
         "label": "Helpful Resources",
             "ids": [
-                "Section_1_Basic_HTML/resources/1.1-cheat-sheet",
-                "Section_1_Basic_HTML/resources/1.2-helpful-links"
+                "HTML/resources/01-cheat-sheet",
+                "HTML/resources/02-resources"
             ]
     }
     ],
-        "The Box Model": [
-        "Section_2_Box_Model_HTML/lesson-2",
+        "Intro to CSS": [
+        "CSS/1-getting-started",
         {
         "type": "subcategory",
         "label": "Helpful Resources", 
             "ids": [
-                "Section_2_Box_Model_HTML/tag-2",
-                "Section_2_Box_Model_HTML/resources-2",
-                "Section_2_Box_Model_HTML/complete-code-2"
+                "CSS/resources/01-cheat-sheet",
+                "CSS/resources/02-resources"
             ]
         }
     ],
-        "Essential Tools": [
+        "Layout": [
             "Essential_Tools/tools"
+        ],
+        "HTML Structure": [
+            "Essential_Tools/tools2"
+        ],
+        "CSS Flebox": [
+            "Essential_Tools/tools3"
+        ],
+        "Responsive Design": [
+            "Essential_Tools/tools4"
+        ],
+        "Review & Final Project": [
+            "Essential_Tools/tools5"
         ]
   }
 }
