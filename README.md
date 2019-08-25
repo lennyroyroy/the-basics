@@ -1,5 +1,7 @@
 # The Basics Course Materials
 
+<a href="https://lennyroyroy.github.io/the-basics/" target="_blank">Homepage Link</a>
+
 Starter Materials for the Introduction to Web Development: The Basics Course
 
 Author: Lennyroy Robles
