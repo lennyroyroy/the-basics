@@ -27,7 +27,8 @@
         }
     ],
         "Layout": [
-            "Layout/1-css-layout"
+            "Layout/1-css-layout",
+            "Layout/2-css-non-semantic"
         ],
         "HTML Structure": [
             "Essential_Tools/tools2"
