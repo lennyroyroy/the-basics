@@ -150,8 +150,8 @@ hr:nth-of-type(2){
 
 
 a:hover{
-	text-decoration: underline;
-	color: #c0392b;
+	color: #FF4AD5;
+  transition: 200ms;
 }
 
 
@@ -161,10 +161,10 @@ a:hover{
 .iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+    padding-top: 90.25%;
     border:solid #5C194D 10px;
     margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 
 
@@ -177,7 +177,89 @@ a:hover{
     border: 0;
 }
 
+.iframe-section hr{
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
 
+.iframe-button{
+  margin-bottom:40px;
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/*Images*/
+
+.inner-page-image{
+  border: solid #FF45D7 5px;
+  max-width: 650px;
+}
+
+/*Misc*/
+
+
+.logos img{
+  border:solid #5C194D 1px;
+  width:90px !important;
+  height: 60px !important;
+  margin-right: 10px;
+  background-color: #f8f8ff;
+}
+
+.imageAlignTop.alignCenter .blockImage{
+  min-width:150px;
+}
+
+
+.testimonials .imageAlignTop.alignCenter .blockImage{
+ max-width: 340px !important;
+
+}
+
+.testimonials img{
+  border:solid #5C194D 2px;
+  max-width: 340px !important;
+  border-radius: 10px;
+}
+
+.productShowcaseSection.paddingBottom{
+  padding-bottom: 0px;
+}
+
+.homeContainer{
+  background-color: #1e272e;
+  color:white !important;
+  padding-bottom:50px;
+  padding-top: 50px;
+}
+
+.homeContainer h2{
+  color:white !important;
+}
+
+.homeContainer a{
+  color:white !important;
+  border:solid white 1px;
+  font-size:15px;
+}
+
+.homeContainer .button{
+  color:white !important;
+}
 
 
 

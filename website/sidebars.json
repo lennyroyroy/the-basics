@@ -5,7 +5,7 @@
     ],
     "Intro to HTML": [
         "HTML/1-getting-started",
-        "HTML/2-foundations",
+        "HTML/2-paragraph",
         {
         "type": "subcategory",
         "label": "Helpful Resources",
@@ -27,7 +27,7 @@
         }
     ],
         "Layout": [
-            "Essential_Tools/tools"
+            "Layout/1-css-layout"
         ],
         "HTML Structure": [
             "Essential_Tools/tools2"

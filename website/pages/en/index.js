@@ -7,6 +7,8 @@
 
 const React = require('react');
 
+
+
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
@@ -60,11 +62,11 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/LR-white@2x.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-             <Button href={docUrl('Introduction/Introduction.html')}>Get Started!</Button>
+             <Button href={docUrl('HTML/1-getting-started.html')}>Get Started Now!</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -94,8 +96,8 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Lorem Ipsum</h2>
-        <MarkdownBlock> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales.</MarkdownBlock>
+        <h2 id="learn-more">What are the basics?</h2>
+        <MarkdownBlock>This 8-week course will take a close look at how HTML & CSS work together to build engaging websites. Each class will be taking a deep dive into web development basics. Exploring everything from centering images to using CSS gradients and organizing content with Flexbox. There will also be optional at-home resources to push your web development skills to the next level! If you have written a single line of HTML and have an email address, this course will be perfect for you.</MarkdownBlock>
       </div>
     );
 
@@ -105,9 +107,9 @@ class Index extends React.Component {
           {
             content:
               ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales. Duis mattis rutrum est, at ultrices nunc semper et. Nullam et diam placerat nulla ultrices tempor. Sed interdum elit nec dictum rutrum. ',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/work.png`,
             imageAlign: 'left',
-            title: 'Lorem ipsum dolor sit amet',
+            title: 'Over 50 challenges to test your new skills!',
           },
         ]}
       </Block>
@@ -118,10 +120,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales. Duis mattis rutrum est, at ultrices nunc semper et. Nullam et diam placerat nulla ultrices tempor. Sed interdum elit nec dictum rutrum. ',
+              ' * ',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: ' Course Description',
+            title: ' Course Overview',
           },
         ]}
       </Block>
@@ -133,43 +135,43 @@ class Index extends React.Component {
           {
             content:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales. Duis mattis rutrum est, at ultrices nunc semper et. Nullam et diam placerat nulla ultrices tempor. Sed interdum elit nec dictum rutrum. Mauris quis turpis bibendum, volutpat leo ac, congue tortor. Sed vehicula interdum molestie. Nunc dapibus urna pellentesque diam varius tempus..',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/homepage.png`,
             imageAlign: 'right',
-            title: 'Lorem ipsum dolor sit amet',
+            title: 'Video Tutorials for every lesson',
           },
         ]}
       </Block>
+
+
     );
 
     const Features = () => (
       <Block layout="fourColumn">
         {[
           {
-            content: 'Learn HTML, CSS & JavaScript!',
+            content: 'Learn all about the <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">building blocks</a> of web development! We will be diving deep in HTML Tags and structure in this lesson.',
             image: `${baseUrl}img/undraw_voice_interface.svg`,
             imageAlign: 'top',
-            title: 'HTML & CSS',
+            title: 'HTML Foundations',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_professor_8.svg`,
+            content: 'Learn all about how to add styling to yout HTML Documents. In this <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">series of lessons</a>, we dive deep into CSS properties and values.',
+            image: `${baseUrl}img/undraw_online_resume.svg`,
             imageAlign: 'top',
-            title: 'JavaScript',
+            title: 'Exploring CSS',
           },
           {
-            content: 'The content of my Third feature',
-            image: `${baseUrl}img/undraw_responsiveness.svg`,
+            content: 'Adjust your projects to be modern and responsive to different devices. <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">In this lesson</a> you will learn how to make sites for iphones and tablets.',
+            image: `${baseUrl}img/undraw_bookmarks.svg`,
             imageAlign: 'top',
-            title: 'Responsive',
+            title: 'Responsive Design',
           },
-                 {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_static_assets.svg`,
+          {
+            content: 'Join me to learn the basics of web development! By the end of this 10+ hour course you will have a firm grasp on the modern web! <a onClick={this.handleClick} href="/the-basics/docs/Introduction/Introduction" class="links">Ready to begin?</a>',
+            image: `${baseUrl}img/undraw_voice_interface.svg`,
             imageAlign: 'top',
-            title: 'The Basics!',
+            title: 'Learn the Basics!',
           },
-
-
         ]}
       </Block>
     );
@@ -182,7 +184,7 @@ class Index extends React.Component {
       const showcase = siteConfig.users
         .filter(user => user.pinned)
         .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
+          <a href={user.infoLink} key={user.infoLink} target="_blank">
             <img src={user.image} alt={user.caption} title={user.caption} />
           </a>
         ));
@@ -191,14 +193,37 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Lorem Ipsum</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales.</p>
-          {/*<div className="logos">{showcase}</div>*/}
-          <div className="more-users">
-{/*            <a className="button" href={pageUrl('users.html')}>
+          <h2>Built with ❤️ using</h2>
+          <p> The Basics is was built using a collection of online tools designed to make coding easier for beginners.</p>
+          <div className="logos">{showcase}</div>
+          {/*<div className="more-users">
+           <a className="button" href={pageUrl('users.html')}>
               More {siteConfig.title} Users
-            </a>*/}
+            </a> 
+          </div>*/}
+        
+          <div className="testimonials">
+            <Container padding={['bottom', 'top']}>
+              <GridBlock
+                align="center"
+                contents={[
+                  {
+                    content:
+                      "*\"I personally believe that anyone who wants to learn coding should have access to the resources available to do so. Computer science and the economic opportunities it affords are crucial in today's economy, and introducing more young women and P.O.C to coding is a lifelong passion of mine.\"*",
+                    image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/profile.png`,
+                    imageAlign: 'top',
+                    imageAlt: 'Lennyroy Robles',
+                    title:
+                      'Lennyroy Robles <br/><font size="2">Instructor</font>',
+                  },
+                ]}
+                layout="threeColumn"
+              />
+            </Container>
           </div>
+
+
+
         </div>
       );
     };

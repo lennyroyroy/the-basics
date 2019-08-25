@@ -11,13 +11,27 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    caption: 'Glitch',
+    image: 'https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Flogo-day.svg',
+    infoLink: 'https://glitch.com',
+    pinned: true,
+    target:'_blank',
+  },
+    {
+    caption: 'Codepen',
+    image: 'https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg',
+    infoLink: 'https://codepen.io',
     pinned: true,
   },
+  {
+    caption: 'Codepen',
+    image: 'https://assets.slid.es/assets/logo/slides-logo-black-1400x550-7b9e714a02b98854ee74956fc396790157fdd592233a3c8ff7c060aba6aef8e8.svg',
+    infoLink: 'https://slides.com',
+    pinned: true,
+  },
+
+
+  
 ];
 
 const siteConfig = {
