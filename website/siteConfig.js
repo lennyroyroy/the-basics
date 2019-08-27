@@ -36,7 +36,7 @@ const users = [
 
 const siteConfig = {
   title: 'The Basics', // Title for your website.
-  tagline: 'Intro into the World of Web Development',
+  tagline: 'Learn the basics of HTML & CSS!',
   docsSideNavCollapsible: true,
   wrapPagesHTML: true,
   url: 'https://lennyroyroy.github.io', // Your website URL

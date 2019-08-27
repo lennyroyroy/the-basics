@@ -63,11 +63,16 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <Logo img_src={`${baseUrl}img/LR-white@2x.png`} />
-        <div className="inner">
+        <div className="inner sidebyside">
           <ProjectTitle siteConfig={siteConfig} />
+          <div className="sidebyside2">
           <PromoSection>
-             <Button href={docUrl('HTML/1-getting-started.html')}>Get Started Now!</Button>
+             <Button href={docUrl('Introduction/Introduction')}>Get Started Now!</Button>
           </PromoSection>
+          <PromoSection>
+          <Button href="https://slides.com/lennyroyroy/deck-3#/" target="_blank">Explore Slide Decks</Button>
+          </PromoSection>
+           </div>
         </div>
       </SplashContainer>
     );
@@ -155,7 +160,7 @@ class Index extends React.Component {
             title: 'HTML Foundations',
           },
           {
-            content: 'Learn all about how to add styling to yout HTML Documents. In this <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">series of lessons</a>, we dive deep into CSS properties and values.',
+            content: 'Learn all about how to add styling to your HTML Documents. In this <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">series of lessons</a>, we dive deep into CSS properties and values.',
             image: `${baseUrl}img/undraw_online_resume.svg`,
             imageAlign: 'top',
             title: 'Exploring CSS',
