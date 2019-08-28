@@ -2,12 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lennyroyroy.github.io/the-basics/blog</id>
     <title>The Basics Blog</title>
-    <updated>2017-10-24T06:00:00Z</updated>
+    <updated>2019-08-28T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://lennyroyroy.github.io/the-basics/blog"/>
     <subtitle>The best place to stay up-to-date with the latest The Basics news and events.</subtitle>
     <logo>https://lennyroyroy.github.io/the-basics/img/LC-white-full.png</logo>
     <rights>Copyright © 2019 Lennyroy Codes</rights>
+    <entry>
+        <title type="html"><![CDATA[Blog Test]]></title>
+        <id>https://lennyroyroy.github.io/the-basics/blog/2019/08/28/blog-test-one.html</id>
+        <link href="https://lennyroyroy.github.io/the-basics/blog/2019/08/28/blog-test-one.html">
+        </link>
+        <updated>2019-08-28T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam odio lacus, et pharetra metus consectetur a. Nulla efficitur lorem risus, nec eleifend velit volutpat a.</p>
+]]></summary>
+        <author>
+            <name>Lennyroy Robles</name>
+            <uri>http://twitter.com/lennyroyroy</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Version 1.0.0]]></title>
         <id>https://lennyroyroy.github.io/the-basics/blog/2017/10/24/new-version-1.0.0.html</id>
@@ -52,19 +65,6 @@
         <link href="https://lennyroyroy.github.io/the-basics/blog/2017/04/10/blog-post-two.html">
         </link>
         <updated>2017-04-10T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
-]]></summary>
-        <author>
-            <name>Blog Author</name>
-            <uri>http://twitter.com/</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Blog Title]]></title>
-        <id>https://lennyroyroy.github.io/the-basics/blog/2016/03/11/blog-post.html</id>
-        <link href="https://lennyroyroy.github.io/the-basics/blog/2016/03/11/blog-post.html">
-        </link>
-        <updated>2016-03-11T06:00:00Z</updated>
         <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
 ]]></summary>
         <author>
