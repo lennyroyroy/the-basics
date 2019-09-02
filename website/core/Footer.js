@@ -36,65 +36,83 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('intro/intro.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>Lennyroy Codes</h5>
+            <a href={this.docUrl('HTML/1-getting-started.html')}>
+              Intro to HTML
             </a>
-            <a href={this.docUrl('intro/intro.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('CSS/1-getting-started.html')}>
+              Intro to CSS
             </a>
-            <a href={this.docUrl('intro/intro.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('Layout/1-css-layout.html')}>
+              Layout
             </a>
+            <a href={this.docUrl('intro/intro.html')}>
+              HTML Structure
+            </a>
+
+            <a href={this.docUrl('intro/intro.html')}>
+              CSS Flexbox
+            </a>
+
+            <a href={this.docUrl('intro/intro.html')}>
+              Responsive Design
+            </a>
+
+
+            <a href={this.docUrl('intro/intro.html')}>
+              Review & Final Project
+            </a>
+
+
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+            <h5>Features</h5>
+            <a href={this.docUrl('Extras/slide-library', this.props.language)}>
+              Slide Library
             </a>
             <a
-              href="http://stackoverflow.com/questions/tagged/"
-              target="_blank"
+              href="https://lennyroyroy.github.io/the-basics/docs/Extras/video-library"
               rel="noreferrer noopener">
-              Stack Overflow
+              Video Library
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+            <a href="https://lennyroyroy.github.io/the-basics/docs/Extras/challenges">Challenges</a>
+            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+          </div>
+          <div>
+            <h5>More</h5>
+            <a href="https://github.com/lennyroyroy/the-basics">GitHub</a>
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/lennyroyroy"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
             </a>
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a
+              href="https://www.linkedin.com/in/lennyroyrobles/"
+              target="_blank"
+              rel="noreferrer noopener">
+              LinkedIn
+            </a>
+            <a
+              href="https://lennyroyroy.github.io/personal-website/"
+              target="_blank"
+              rel="noreferrer noopener">
+              Portfolio
+            </a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
+              data-size="large"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="Star lennyroyroy/the-basics on GitHub">
               Star
             </a>
           </div>
         </section>
 
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
+
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );

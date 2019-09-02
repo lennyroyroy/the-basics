@@ -13,7 +13,7 @@ Quick intro the course.
 
 ### Skip Ahead?
 
-<a href="https://lennyroyroy.github.io/the-basics/docs/HTML/1-getting-started" target="_blank" class="button">Lesson 1</a> <a href="https://slides.com/lennyroyroy/deck#/" target="_blank" class="button">Lesson 1 Slide Deck</a>
+<a href="https://lennyroyroy.github.io/the-basics/docs/HTML/1-getting-started" class="button">Lesson 1</a> <a href="https://slides.com/lennyroyroy/deck#/" target="_blank" class="button">Lesson 1 Slide Deck</a>
 
 
 # Welcome!
@@ -101,6 +101,34 @@ _What will you learn?_
 
 </section>
 
+<section class="inner-section">
+
+## Ready to start?
+
+
+<a href="https://lennyroyroy.github.io/the-basics/docs/HTML/1-getting-started" class="button">Intro to HTML</a>
+
+</section>
+
+<section class="inner-section">
+
+## Contact Info
+
+<div>
+
+Email: lennyroycodes@gmail.com
+
+Website: <a href="">lennyroyrobles.com</a>
+
+Social Media: <a href="">@lennyroyroy</a>
+
+<a href="">GitHub</a>
+
+<a href="">Codepen</a> | <a href="">Glitch</a>
+</div>
+
+</section>
+
 
 <section class="inner-section intro-images"> 
 
@@ -178,7 +206,7 @@ _What will you learn?_
 <div class="slide-deck-gallery">
 
 <div>
-<span> Lesson 5: Flexbox  </span>
+<span> Lesson 7: Responsive Design  </span>
 <a href="https://slides.com/lennyroyroy/deck-10#/" target="_blank">       
 <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479519/pasted-from-clipboard.png"/>
 </a>
@@ -194,23 +222,5 @@ _What will you learn?_
 </div>
 </section>
 
-<section class="inner-section">
-
-## Contact Info
-
-<div>
-
-Email: lennyroycodes@gmail.com
-
-Website: <a href="">lennyroyrobles.com</a>
-
-Social Media: <a href="">@lennyroyroy</a>
-
-<a href="">GitHub</a>
-
-<a href="">Codepen</a> | <a href="">Glitch</a>
-</div>
-
-</section>
 
 

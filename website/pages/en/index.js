@@ -15,6 +15,9 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+
+
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
@@ -40,7 +43,7 @@ class HomeSplash extends React.Component {
     const ProjectTitle = () => (
       <h2 className="projectTitle">
         {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
+        <small>{siteConfig.tagline_display}</small>
       </h2>
     );
 
@@ -67,10 +70,10 @@ class HomeSplash extends React.Component {
           <ProjectTitle siteConfig={siteConfig} />
           <div className="sidebyside2">
           <PromoSection>
-             <Button href={docUrl('Introduction/Introduction')}>Get Started Now!</Button>
+             <Button href={docUrl('Introduction/Introduction')}>Start Online Course</Button>
           </PromoSection>
           <PromoSection>
-          <Button href="https://slides.com/lennyroyroy/deck-3#/" target="_blank">Explore Slide Decks</Button>
+          <Button href="https://slides.com/lennyroyroy/deck-3#/" target="_blank">Start Live Course</Button>
           </PromoSection>
            </div>
         </div>
@@ -101,7 +104,7 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2 id="learn-more">What are the basics?</h2>
+        <h2 id="learn-more">Course Description</h2>
         <MarkdownBlock>This 8-week course will take a close look at how HTML & CSS work together to build engaging websites. Each class will be taking a deep dive into web development basics. Exploring everything from centering images to using CSS gradients and organizing content with Flexbox. There will also be optional at-home resources to push your web development skills to the next level! If you have written a single line of HTML and have an email address, this course will be perfect for you.</MarkdownBlock>
       </div>
     );
@@ -113,8 +116,9 @@ class Index extends React.Component {
             content:
               ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales. Duis mattis rutrum est, at ultrices nunc semper et. Nullam et diam placerat nulla ultrices tempor. Sed interdum elit nec dictum rutrum. ',
             image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/work.png`,
+            imageAlt: 'Screen shot of a challenge for this course. There is code in the image as a well as a view of the Glitch interface',
             imageAlign: 'left',
-            title: 'Over 50 challenges to test your new skills!',
+            title: 'Over 50 in-lesson challenges to test your new skills! ',
           },
         ]}
       </Block>
@@ -125,7 +129,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              ' * ',
+              'Over 10 hours of course content spanning from early HTML to responsive design.<br><br>lorem',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
             title: ' Course Overview',
@@ -135,14 +139,15 @@ class Index extends React.Component {
     );
 
     const LearnHow = () => (
-      <Block background="light">
+      <Block background="dark">
         {[
           {
             content:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis faucibus aliquam. Vivamus vel convallis velit, sit amet malesuada sem. Nam posuere mattis sodales. Duis mattis rutrum est, at ultrices nunc semper et. Nullam et diam placerat nulla ultrices tempor. Sed interdum elit nec dictum rutrum. Mauris quis turpis bibendum, volutpat leo ac, congue tortor. Sed vehicula interdum molestie. Nunc dapibus urna pellentesque diam varius tempus..',
             image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/homepage.png`,
             imageAlign: 'right',
-            title: 'Video Tutorials for every lesson',
+            title: 'Each lesson has a video tutorial to help you through your coding journey.',
+            imageAlt: 'Screen shot of a YouTube video. The image contains a small picture of the instructor Lennyroy Robles. This is the first video in the HTML series.',
           },
         ]}
       </Block>
@@ -198,14 +203,14 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Built with ❤️ using</h2>
-          <p> The Basics is was built using a collection of online tools designed to make coding easier for beginners.</p>
+          <h2>Built with ❤️</h2>
+          <p>This course is was built using a collection of online tools designed to make coding easier for beginners.</p>
           <div className="logos">{showcase}</div>
-          {/*<div className="more-users">
+          <div className="more-users logo-message">
            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
+              Special Thanks
             </a> 
-          </div>*/}
+          </div>
         
           <div className="testimonials">
             <Container padding={['bottom', 'top']}>
@@ -248,5 +253,6 @@ class Index extends React.Component {
     );
   }
 }
-
 module.exports = Index;
+
+

@@ -1,0 +1,180 @@
+{
+  "docs": {
+    "The Basics": [
+        "Introduction/Introduction"
+    ],
+    "Intro to HTML": [
+        "HTML/1-getting-started",
+        "HTML/2-paragraph",
+        {
+        "type": "subcategory",
+        "label": "Helpful Resources",
+            "ids": [
+                "HTML/resources/01-cheat-sheet",
+                "HTML/resources/02-resources"
+            ]
+    }
+    ],
+        "Intro to CSS": [
+        "CSS/1-getting-started",
+        {
+        "type": "subcategory",
+        "label": "Helpful Resources", 
+            "ids": [
+                "CSS/resources/01-cheat-sheet",
+                "CSS/resources/02-resources"
+            ]
+        }
+    ],
+        "Layout": [
+            "Layout/1-css-layout",
+            "Layout/2-css-non-semantic"
+        ],
+        "HTML Structure": [
+            "Essential_Tools/tools2"
+        ],
+        "CSS Flebox": [
+            "Essential_Tools/tools3"
+        ],
+        "Responsive Design": [
+            "Essential_Tools/tools4"
+        ],
+        "Review & Final Project": [
+            "Essential_Tools/tools5"
+        ]
+  }
+}
+
+
+
+      <a href={this.pageUrl('docs/Extras/slide-library.html', this.props.language)}>
+              Slide Library
+            </a>
+
+
+
+ 'Over 10 hours of course content spanning from early HTML to responsive design.<br><br>lorem',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 'Over 10 hours of course content spanning from early HTML to responsive design.<br><br>lorem',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

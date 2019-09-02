@@ -19,8 +19,6 @@ Getting used to creating layout using DIVs in HTML & CSS
 ### Codepen Lesson <a name="chapter-1"></a>
 
 
-
-
 <iframe height="650" style="width: 100%;" scrolling="no" title="The Basics: Simple Layout (non semantic)" src="//codepen.io/lennyroycodes/embed/preview/QeryBp/?height=300&theme-id=37020&default-tab=html,result&editable=true" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lennyroycodes/pen/QeryBp/'>The Basics: Simple Layout (non semantic)</a> by lennyroy
   (<a href='https://codepen.io/lennyroycodes'>@lennyroycodes</a>) on <a href='https://codepen.io'>CodePen</a>.

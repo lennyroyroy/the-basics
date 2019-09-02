@@ -4,16 +4,20 @@ title: The Paragraph Tag
 sidebar_label: Paragraph Tag
 ---
 
-`<p> content </p>`
+<section class="inner-section">
 
-The `<p>` tag defines a paragraph. We use it to wrap to wrap text.
+The paragraph tag defines a paragraph. We use it to wrap to wrap text.
 
+
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6497169/pasted-from-clipboard.png"/>
+
+<a href="https://slides.com/lennyroyroy/deck#/6" target="_blank" class="button live-button">Open Slide</a>
+
+</section>
 
 <section class="inner-section">
 
 ## The Basics: The Paragraph Tag
-
-<a href="https://slides.com/lennyroyroy/deck#/9" target="_blank" class="button">Link to Lesson Slide Deck</a>
 
 </section>
 
@@ -53,7 +57,7 @@ Brief podcast episode of the lesson.
 <iframe src="https://open.spotify.com/embed-podcast/episode/2k1PINTB0iVZ0fJeUZ5lUM" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
-<a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-Paragraph-Tag-e4gf5l" target="_blank" class="button">Podcast Link</a>
+<a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-Paragraph-Tag-e4gf5l" target="_blank" class="button live-button">Podcast Link</a>
 
 </section>
 

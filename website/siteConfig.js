@@ -22,12 +22,35 @@ const users = [
     image: 'https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg',
     infoLink: 'https://codepen.io',
     pinned: true,
+    target:'_blank',
   },
   {
-    caption: 'Codepen',
-    image: 'https://assets.slid.es/assets/logo/slides-logo-black-1400x550-7b9e714a02b98854ee74956fc396790157fdd592233a3c8ff7c060aba6aef8e8.svg',
+    caption: 'Slides',
+    image: 'https://static.slid.es/logo/slides-logo-495x479.png',
     infoLink: 'https://slides.com',
     pinned: true,
+    target:'_blank',
+  },
+  {
+    caption: 'Docusaurus',
+    image: 'https://seeklogo.com/images/D/docusaurus-logo-808B78C0CA-seeklogo.com.png',
+    infoLink: 'https://docusaurus.io',
+    pinned: true,
+    target:'_blank',
+  },
+  {
+    caption: 'Tunetank',
+    image: 'https://tunetank.com/img/logo_word.svg',
+    infoLink: 'https://tunetank.com',
+    pinned: true,
+    target:'_blank',
+  },
+    {
+    caption: 'Anchor',
+    image: 'http://c93fea60bb98e121740fc38ff31162a8.s3.amazonaws.com/wp-content/uploads/2017/03/anchor-fm.jpg',
+    infoLink: 'https://anchor.fm',
+    pinned: true,
+    target:'_blank',
   },
 
 
@@ -36,7 +59,8 @@ const users = [
 
 const siteConfig = {
   title: 'The Basics', // Title for your website.
-  tagline: 'Learn the basics of HTML & CSS!',
+  tagline: 'Learn the basics of HTML & CSS in 8 weeks with Lennyroy!',
+  tagline_display: 'Learn the basics of HTML & CSS!',
   docsSideNavCollapsible: true,
   wrapPagesHTML: true,
   url: 'https://lennyroyroy.github.io', // Your website URL
@@ -54,10 +78,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    // {doc: 'intro/intro', label: 'Intro'}
-    // {doc: 'doc4', label: 'API'},
-    // {page: 'help', label: 'Help'},
-    // {blog: true, label: 'Blog'},
+    {doc: 'Extras/slide-library', label: 'Slides'},
+    {doc: 'Extras/video-library', label: 'Videos'},
+    {doc: 'Extras/challenges', label: 'Challenges'},
+    { blog: true, label: 'Blog' }
   ],
 
   // If you have users set above, you add it here:
@@ -90,7 +114,7 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Lennyroy Codes`,
-
+  gaTrackingId: 'UA-146614083-1',
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'monokai',
@@ -103,6 +127,10 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
+  scrollToTop: true,
+    scrollToTopOptions: {
+    zIndex: 100,
+  },
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',

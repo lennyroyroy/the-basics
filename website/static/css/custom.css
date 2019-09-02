@@ -4,9 +4,20 @@ body{
 	background-color: #f5f6fa;
 }
 
+.fixedHeaderContainer header .headerTitleWithLogo{
+  border:solid red 1px;
+  display: none;
+}
+
 .fixedHeaderContainer header img{
-  height: 60px;
   width: auto;
+  height:45px;
+  opacity:.8;
+}
+
+.fixedHeaderContainer header img:hover{
+  opacity: 1;
+  transition: 600ms;
 }
 
 .room{
@@ -212,12 +223,21 @@ a:hover{
 /*Misc*/
 
 
+
 .logos img{
-  border:solid #5C194D 1px;
-  width:90px !important;
-  height: 60px !important;
+  border:solid #5C194D .05rem;
+  border-radius: 10px;
   margin-right: 10px;
   background-color: #f8f8ff;
+  height: 50px;
+  width: 50px !important;
+  padding:10px !important;
+  opacity: 0.6;
+}
+
+.logos img:hover{
+  opacity: 1;
+  transition: 600ms;
 }
 
 .imageAlignTop.alignCenter .blockImage{
@@ -328,6 +348,66 @@ a:hover{
   font-size:1.3rem;
 }
 
+.slide-main{
+  display:flex;
+  flex-direction: row;
+}
+
+.slide-main img{
+  border:solid 1px #5B1A4C;
+  min-width: 250px;
+}
+
+.slide-main h2{
+  font-size:16px !important;
+}
+
+.video-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.video-container div{
+  min-width: 50%;
+  margin-right: 10px;
+}
+
+.video-container p{
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+
+.copyright{
+  font-size: .6rem;
+}
+
+.paddingBottom:nth-of-type(2){
+  padding-bottom: 100px !important;
+}
+
+.testimonials  .paddingBottom{
+ padding-top: 10px !important;
+ margin-top: 0px !important;
+}
+
+
+.live-button{
+  background-color: #43353F;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+/*##################################################
+#                                                  #
+#                                                  #
+#          Breakpoints & Media Queries             #            
+#                                                  #
+#                                                  #
+###################################################*/
+
 
 @media only screen and (max-width: 1170px) {
   .slide-deck-gallery{
@@ -335,10 +415,105 @@ a:hover{
   }
 
   .slide-deck-gallery img{
-  max-width:100%;
-}
+    max-width:100%;
+  }
 
 }
+
+.logo-message{
+  display: none;
+}
+
+
+@media only screen and (max-width: 680px) {
+
+.testimonials  .paddingBottom{
+ padding-top: 30px !important;
+ margin-top: 0px !important;
+}
+
+
+
+.homeContainer a{
+  font-size: .75rem;
+  padding: 10px 6px;
+}
+
+.fixedHeaderContainer header img{
+  opacity:.95;
+}
+
+
+
+
+.blockContent h2{
+  text-align: center !important;
+}
+
+.fixedHeaderContainer header {
+  margin-left: -10px !important;
+}
+
+footer h5{
+  font-size: 1.2rem;
+}
+
+footer a{
+  font-size: 1.05rem;
+}  
+
+.productShowcaseSection .logos{
+  padding-top: 0px;
+}
+
+.logos img{
+  display: none;
+}
+
+  .logo-message{
+  display: block;
+}
+ 
+
+
+
+.imageAlignTop.alignCenter .blockImage img:last-of-type{
+  max-width: 150px;
+  width: 200px;
+}
+
+
+  .homeContainer{
+    padding-bottom: 220px;
+  }
+
+  .slide-main{
+   flex-direction: column;
+  }
+
+
+  .slide-row{
+  margin-right:10px;
+}
+
+  .slide-main img{
+  }
+
+.video-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container div{
+  margin-right: 0px;
+  margin-top: 20px;
+}
+
+
+
+}
+
+
 
 
 

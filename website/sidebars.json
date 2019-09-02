@@ -5,26 +5,10 @@
     ],
     "Intro to HTML": [
         "HTML/1-getting-started",
-        "HTML/2-paragraph",
-        {
-        "type": "subcategory",
-        "label": "Helpful Resources",
-            "ids": [
-                "HTML/resources/01-cheat-sheet",
-                "HTML/resources/02-resources"
-            ]
-    }
+        "HTML/2-paragraph"
     ],
         "Intro to CSS": [
-        "CSS/1-getting-started",
-        {
-        "type": "subcategory",
-        "label": "Helpful Resources", 
-            "ids": [
-                "CSS/resources/01-cheat-sheet",
-                "CSS/resources/02-resources"
-            ]
-        }
+        "CSS/1-getting-started"
     ],
         "Layout": [
             "Layout/1-css-layout",

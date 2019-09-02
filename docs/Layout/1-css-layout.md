@@ -1,6 +1,6 @@
 ---
 id: 1-css-layout
-title: CSS Layout Overview
+title: Layout Overview
 sidebar_label: Layout Overview
 ---
 
@@ -8,7 +8,7 @@ Explore different layouts with CSS.
 
 <section class="inner-section">
 
-## The Basics: CSS Layout Overview
+## The Basics: Layout Overview
 
 <a href="https://slides.com/lennyroyroy/deck-4#/3" target="_blank" class="button">Link to Lesson Slide Deck</a>
 
