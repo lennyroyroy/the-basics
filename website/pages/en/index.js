@@ -7,8 +7,6 @@
 
 const React = require('react');
 
-
-
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
@@ -76,6 +74,7 @@ class HomeSplash extends React.Component {
           <Button href="https://slides.com/lennyroyroy/deck-3#/" target="_blank">Start Live Course</Button>
           </PromoSection>
            </div>
+            <a href="#learn-more-scroll" className="button learn-more-home">About The Course</a>
         </div>
       </SplashContainer>
     );
@@ -156,7 +155,7 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="fourColumn" id="learn-more-scroll">
         {[
           {
             content: 'Learn all about the <a onClick={this.handleClick} href="/the-basics/docs/HTML/1-getting-started.html" class="links">building blocks</a> of web development! We will be diving deep in HTML Tags and structure in this lesson.',
@@ -220,7 +219,7 @@ class Index extends React.Component {
                   {
                     content:
                       "*\"I personally believe that anyone who wants to learn coding should have access to the resources available to do so. Computer science and the economic opportunities it affords are crucial in today's economy, and introducing more young women and P.O.C to coding is a lifelong passion of mine.\"*",
-                    image: `https://raw.githubusercontent.com/lennyroyroy/basics-image/master/profile.png`,
+                    image: `https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6495706/IMG_0433.JPG.jpg`,
                     imageAlign: 'top',
                     imageAlt: 'Lennyroy Robles',
                     title:

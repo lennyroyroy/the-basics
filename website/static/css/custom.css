@@ -1,5 +1,9 @@
 /* your custom css */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	background-color: #f5f6fa;
 }
@@ -406,6 +410,18 @@ a:hover{
   padding-bottom: 20px;
 }
 
+.learn-more-home{
+  color:#5C194D !important;
+}
+
+.learn-more-home:hover{
+  background-color:white !important;
+  color:#1E272F !important;
+}
+
+
+
+
 /*##################################################
 #                                                  #
 #                                                  #
@@ -540,7 +556,7 @@ footer a{
 
 
   .homeContainer{
-    padding-bottom: 220px;
+    padding-bottom: 240px;
   }
 
   .slide-main{

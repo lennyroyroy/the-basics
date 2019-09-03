@@ -5,7 +5,10 @@
     ],
     "Intro to HTML": [
         "HTML/1-getting-started",
-        "HTML/2-paragraph"
+        "HTML/2-paragraph",
+        "HTML/3-heading-tags",
+        "HTML/4-strong-italic",
+        "HTML/5-line-break"
     ],
         "Intro to CSS": [
         "CSS/1-getting-started"

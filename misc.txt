@@ -45,6 +45,8 @@
   }
 }
 
+sidebar_label: The Paragraph Tag
+
 
 
       <a href={this.pageUrl('docs/Extras/slide-library.html', this.props.language)}>

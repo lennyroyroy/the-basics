@@ -13,7 +13,7 @@ Quick intro the course.
 
 ### Skip Ahead?
 
-<a href="https://lennyroyroy.github.io/the-basics/docs/HTML/1-getting-started" class="button">Lesson 1</a> <a href="https://slides.com/lennyroyroy/deck#/" target="_blank" class="button">Lesson 1 Slide Deck</a>
+<a href="/the-basics/docs/HTML/1-getting-started" class="button">Lesson 1</a> <a href="https://slides.com/lennyroyroy/deck#/" target="_blank" class="button">Lesson 1 Slide Deck</a>
 
 
 # Welcome!
