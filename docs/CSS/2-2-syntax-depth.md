@@ -76,12 +76,16 @@ title: Breaking down CSS Rule Syntax
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/1iABqmFNNlkH8xkaYUQub2" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Basics%20Screenshots/style-syntax-3.png"/>
+
 <h4>CSS Syntax</h4>
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/1iABqmFNNlkH8xkaYUQub2" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Basics%20Screenshots/style-syntax-4.png"/>
 
-<a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-The-Style-Tag-e4gevf" target="_blank" class="button live-button">Listen to Podcast</a>
+
+<a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-The-Style-Tag-e4gevf" target="_blank" class="button live-button">Listen to Podcast</a> <a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-CSS-Syntax-e4gf2i" target="_blank" class="button live-button">Listen to Podcast</a>
 
 </section>
 
