@@ -7,7 +7,7 @@ title: First Steps in HTML
 
 Learn the layout and features of this course. We will be diving into how HTML works conceptually and even seeing a few basics tags in action!
 
-<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Screen%20Shot%202019-09-02%20at%206.35.34%20PM.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Basics%20Screenshots/Screen%20Shot%202019-09-02%20at%206.35.34%20PM.png"/>
 
 <a href="https://slides.com/lennyroyroy/deck#/3" target="_blank" class="button live-button">Open Slide</a>
 

@@ -9,9 +9,9 @@ title: Link Tags
 
 The `<a>` tag defines a hyperlink. Most commonly used with href attribute.
 
-<img src="$basics_slide_img"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Basics%20Screenshots/linktags.png"/>
 
-<a href="$basics_slide_direct_URL" target="_blank" class="button live-button">Open Slide</a>
+<a href="https://slides.com/lennyroyroy/deck#/10" target="_blank" class="button live-button">Open Slide</a>
 
 </section>
 
@@ -29,11 +29,16 @@ The `<a>` tag defines a hyperlink. Most commonly used with href attribute.
 
 ### Codepen Lesson
 
-$basics_codepen_desc
+Just add a full working `<a>` anywhere in the text and link off to google.
 
-$basics_codepen_iframe
+look up "target="_blank" and try to figure out how to open a new tab. Add one of each in the text. 
 
-<a href="$basics_direct_codepen_url" target="_blank" class="button live-button">Open Codepen</a>
+<iframe height="650" style="width: 100%;" scrolling="no" title="The Basics: Link Tags" src="//codepen.io/lennyroycodes/embed/preview/MMvqML/?height=300&theme-id=37020&default-tab=html,result&editable=true" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lennyroycodes/pen/MMvqML/'>The Basics: Link Tags</a> by lennyroy
+  (<a href='https://codepen.io/lennyroycodes'>@lennyroycodes</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<a href="https://codepen.io/lennyroycodes/pen/MMvqML" target="_blank" class="button live-button">Open Codepen</a>
 
 </section>
 
@@ -43,11 +48,13 @@ $basics_codepen_iframe
 
 ### Video Walkthrough
 
-$basics_youtube_desc
+Learn more HTML Tags!
 
-$basics_youtube_iframe
+<div class="video-responsive">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/RT5SL_VyPnQ?autoplay=0&rel=0&start=502" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<a href="$basics_direct_youtube_url" target="_blank" class="button live-button">View Youtube Video</a>
+<a href="https://youtu.be/RT5SL_VyPnQ?autoplay=0&rel=0&start=502" target="_blank" class="button live-button">View Youtube Video</a>
 
 </section>
 
@@ -57,11 +64,11 @@ $basics_youtube_iframe
 
 ### Audio Walkthrough 
 
-$basics_podcast_desc
+How to make a link in HTML
 
-$basics_spotify_iframe
+<iframe src="https://open.spotify.com/embed-podcast/episode/7cwYg6DDXuoiPeq9qVp6cM" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-<a href="$basics_direct_anchor_url" target="_blank" class="button live-button">Listen to Podcast</a>
+<a href="https://anchor.fm/lennyroy-robles4/episodes/The-Basics-Link-Tag-e4htnt" target="_blank" class="button live-button">Listen to Podcast</a>
 
 </section>
 

@@ -330,7 +330,10 @@ a:hover{
 
 .intro-images img{
   margin-top:40px;
+  max-width: 60%;
+  margin-left: 0px;
 }
+
 
 .slide-deck-gallery{
   display: flex !important;
@@ -502,6 +505,11 @@ a:hover{
 .testimonials  .paddingBottom{
  padding-top: 30px !important;
  margin-top: 0px !important;
+}
+
+.intro-images img{
+  max-width: 100%;
+  margin-right: auto;
 }
 
 

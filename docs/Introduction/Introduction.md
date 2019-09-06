@@ -3,18 +3,32 @@ id: Introduction
 title: Course Introduction
 ---
 
+<!--############## Intro Section ##############-->
+
+<section class="inner-section">
+
 Quick intro the course.
 
-## The Basics: Introduction
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Basics%20Screenshots/welcome.png"/>
 
-
-<a href="https://slides.com/lennyroyroy/deck-3#/" target="_blank" class="button">Intro Slide Deck</a>
+<a href="https://slides.com/lennyroyroy/deck-3#/" target="_blank" class="button live-button">Intro Slide Deck</a>
 
 
 ### Skip Ahead?
 
 <a href="/the-basics/docs/HTML/1-getting-started" class="button">Lesson 1</a> <a href="https://slides.com/lennyroyroy/deck#/" target="_blank" class="button">Lesson 1 Slide Deck</a>
 
+</section>
+
+<!--############## Title Section ##############-->
+
+<section class="inner-section">
+
+## The Basics: Introduction
+
+</section>
+
+<section class="inner-section">
 
 # Welcome!
 
@@ -28,9 +42,9 @@ Quick intro the course.
 
 <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6335481/headshot.jpg">
 
-
-
 </div>
+
+</section>
 
 <section class="inner-section">
 
@@ -139,14 +153,14 @@ Social Media: <a href="">@lennyroyroy</a>
 <div> 
     <span> Lesson 1: Intro to HTML </span>
     <a href="https://slides.com/lennyroyroy/deck/" target="_blank">     
-    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6478292/pasted-from-clipboard.png"/>
+    <img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/1.png"/>
     </a>
 </div>
 
 <div>
     <span> Lesson 2: Intro to CSS  </span>
     <a href="https://slides.com/lennyroyroy/deck-1#/" target="_blank">   
-    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6478297/pasted-from-clipboard.png"/>
+    <img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/2.png"/>
     </a>
 </div>  
 
@@ -157,13 +171,13 @@ Social Media: <a href="">@lennyroyroy</a>
 <div>
 <span>Extra: Creating Accounts</span>
 <a href="https://slides.com/lennyroyroy/deck-5#/" target="_blank">       
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479480/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/accounts.png"/>
 </a>
 </div>    
 <div> 
 <span>Extra: Creating Glitch Tutorial</span>
 <a href="https://slides.com/lennyroyroy/deck-6#/" target="_blank">     
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479471/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/glitch.png"/>
 </a>
 </div>  
 
@@ -174,13 +188,13 @@ Social Media: <a href="">@lennyroyroy</a>
 <div>
 <span> Lesson 3: Layout  </span>
 <a href="https://slides.com/lennyroyroy/deck-4#/" target="_blank">       
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479461/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/3.png"/>
 </a>
 </div>    
 <div>
 <span> Lesson 4: HTML Structure  </span>
 <a href="https://slides.com/lennyroyroy/deck-7#/" target="_blank">    
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479476/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/4.png"/>
 </a>
 </div>  
 
@@ -191,13 +205,13 @@ Social Media: <a href="">@lennyroyroy</a>
 <div>
 <span> Lesson 5: Flexbox  </span>
 <a href="https://slides.com/lennyroyroy/deck-8#/" target="_blank">       
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479482/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/5.png"/>
 </a>
 </div>    
 <div>
 <span> Lesson 6: Responsive Design  </span>
 <a href="https://slides.com/lennyroyroy/deck-9#/" target="_blank">    
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479487/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/6.png"/>
 </a>
 </div>  
 
@@ -208,7 +222,7 @@ Social Media: <a href="">@lennyroyroy</a>
 <div>
 <span> Lesson 7: Responsive Design  </span>
 <a href="https://slides.com/lennyroyroy/deck-10#/" target="_blank">       
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1075364/images/6479519/pasted-from-clipboard.png"/>
+<img src="https://raw.githubusercontent.com/lennyroyroy/basics-image/master/Slides%20Thumbs/7.1.png"/>
 </a>
 </div>    
 <div>

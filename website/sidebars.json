@@ -5,13 +5,26 @@
     ],
     "Intro to HTML": [
         "HTML/1-getting-started",
+        "HTML/14-syntax",
+        "HTML/15-in-action",
         "HTML/2-paragraph",
         "HTML/3-heading-tags",
         "HTML/4-strong-italic",
-        "HTML/5-line-break"
+        "HTML/5-line-break",
+        "HTML/6-link-tags",
+        "HTML/8-attributes",
+        "HTML/9-image",
+        "HTML/10-lists",
+        "HTML/11-review",
+        "HTML/12-challenge",
+        "HTML/13-advanced",
+        "HTML/16-resources",
+        "HTML/20-test"
     ],
         "Intro to CSS": [
-        "CSS/1-getting-started"
+        "CSS/1-getting-started",
+        "CSS/2-1-css-syntax",
+        "CSS/2-2-syntax-depth"
     ],
         "Layout": [
             "Layout/1-css-layout",
